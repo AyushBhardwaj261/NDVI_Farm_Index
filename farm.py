@@ -59,10 +59,10 @@ def doKMeans(img, k=3, features=[0]):
     # KMEANS_RANDOM_CENTERS
     cv2.setRNGSeed(99163)
     _, img_k_temp, center = cv2.kmeans(**param_k)
-    print("image1",img_k_temp)
+#     print("image1",img_k_temp)
     # Convert back
     img_k = img_k_temp.astype(np.uint8).reshape((img.shape[0], -1))
-    print("image2")
+#     print("image2")
     # return
     return img_k
 
