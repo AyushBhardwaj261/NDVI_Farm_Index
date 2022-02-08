@@ -747,6 +747,7 @@ def main():
     img_raw = cv2.imread(img_path)
     # print("Input provided")
     #cv2.imshow("output1",find_small_shape(img_raw))
+    #cv2.imshow("kmeans",doKMeans(img_raw))
     cv2.imshow("kmeans",img_raw)
     cv2.waitKey(0)
     # cv2.imshow("output3",blurImg(img_raw))
